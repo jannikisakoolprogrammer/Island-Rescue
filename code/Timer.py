@@ -11,7 +11,7 @@ class Timer(object):
 	
 	def update(self):
 	
-		self.t_cur += self.t_step
+		self.t_cur += self.t_step		
 		
 		if self.t_cur >= self.t_max:
 			self.reset()

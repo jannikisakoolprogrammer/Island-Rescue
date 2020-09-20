@@ -26,21 +26,23 @@ def load_images(
 		# Can either be dir or file.
 		print("# Can either be dir or file.")
 		
-		for p in _paths:
-		
-			if os.path.isfile(p):
-				# Load image from file.				
+		if os.path.isfile(_paths):
+			# Load image from file.				
+			surfaces.append(
+				pygame.image.load(
+					_paths).convert_alpha())
+					
+		elif os.path.isdir(_paths):
+			# Load images from dir.
+			d = _paths
+			print(os.listdir(d))
+			for f in os.listdir(d):
+				tmp_path = os.path.join(
+					os.path.abspath(_paths),
+					f)
 				surfaces.append(
 					pygame.image.load(
-						p).convert_alpha())
-						
-			elif os.path.isdir(p):
-				# Load images from dir.
-				d = p
-				for f in d:
-					surfaces.append(
-						pygame.image.load(
-							f).convert_alpha())
+						tmp_path).convert_alpha())
 	
 	return surfaces
 

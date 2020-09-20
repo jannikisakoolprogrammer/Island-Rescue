@@ -8,7 +8,7 @@ from code.Timer import Timer
 class Animation(pygame.sprite.Sprite):
 	def __init__(self,
 		_surfaces,
-		_update_interval = settings.FPS):
+		_update_interval = settings.FPS / settings.FPS):
 		
 		self.surfaces = _surfaces
 		
@@ -23,7 +23,7 @@ class Animation(pygame.sprite.Sprite):
 		
 		
 		self.cur_surface_idx = 0
-		self.max_surface_idx = len(self.surfaces)
+		self.max_surface_idx = len(self.surfaces) - 1
 		self.set_next_surface()
 		
 		
@@ -32,6 +32,11 @@ class Animation(pygame.sprite.Sprite):
 		if self.timer.update() == True:
 			self.update_cur_surface_idx()
 			self.set_next_surface()
+			
+			return True
+		
+		else:
+			return False
 	
 	
 	def update_cur_surface_idx(self):
