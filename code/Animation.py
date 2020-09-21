@@ -3,6 +3,7 @@ pygame.init()
 
 from code import settings
 from code.Timer import Timer
+import copy
 
 
 class Animation(pygame.sprite.Sprite):
@@ -11,6 +12,7 @@ class Animation(pygame.sprite.Sprite):
 		_update_interval = settings.FPS / settings.FPS):
 		
 		self.surfaces = _surfaces
+		self.orig_surfaces = copy.copy(_surfaces)
 		
 		if _update_interval > settings.FPS:
 			self.update_interval = settings.FPS
@@ -52,4 +54,20 @@ class Animation(pygame.sprite.Sprite):
 	
 		self.image = self.surfaces[self.cur_surface_idx]
 		self.rect = self.image.get_rect()
+	
+	
+	def rotate(self,
+		_direction):
+		
+		for x in range(len(self.orig_surfaces)):
+			new_surface = pygame.transform.rotate(
+				self.orig_surfaces[x],
+				_direction)
+			self.surfaces[x] = new_surface
+	
+	
+	def reverse(self):
+		self.surfaces.reverse()
+		self.orig_surfaces.reverse()
+		
 		

@@ -53,7 +53,7 @@ def main():
 				if e.key == pygame.K_ESCAPE:
 					running = False
 					
-		helicopter.update()
+		helicopter.update(events)
 					
 		window.fill(blue)
 		helicopter.draw(window)
