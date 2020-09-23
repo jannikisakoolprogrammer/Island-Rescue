@@ -8,7 +8,7 @@ class MapTile(OtherGameObject):
 		_pos_top,	
 		_tile_char):
 		super(
-			Map,
+			MapTile,
 			self).__init__(
 				_animation,
 				_animation_speed,

@@ -1,6 +1,8 @@
 import pygame
 pygame.init()
 
+import math
+
 
 from code.Animation import Animation
 
@@ -27,7 +29,10 @@ class Helicopter(pygame.sprite.Sprite):
 		
 		self.turn_amount = 2
 		self.angle = 0
-		
+		self.speed_x = 0
+		self.speed_y = 0
+		self.max_speed = 5
+		self.go = False
 		self.turn_left = False
 		self.turn_right = False
 		
@@ -49,7 +54,14 @@ class Helicopter(pygame.sprite.Sprite):
 			self.angle += self.turn_amount
 			if self.angle > 360:
 				self.angle = self.turn_amount
-			self.rotate(-self.angle)		
+			self.rotate(-self.angle)
+
+		if self.go == True:
+			self.speed_x = -math.sin(math.radians(self.angle)) * self.max_speed
+			self.speed_y = math.cos(math.radians(self.angle)) * self.max_speed
+		else:
+			self.speed_x = 0
+			self.speed_y = 0
 		
 		if self.animation.update() == True:
 			self.image = self.animation.image				
@@ -74,6 +86,11 @@ class Helicopter(pygame.sprite.Sprite):
 						self.animation.reverse()
 					self.turn_right = True
 					self.last_turn_direction = "right"
+				if e.key == pygame.K_w:
+					self.go = True
+
+					
+					print(self.angle)
 
 			if e.type == pygame.KEYUP:
 				if e.key == pygame.K_a:
@@ -81,6 +98,8 @@ class Helicopter(pygame.sprite.Sprite):
 				if e.key == pygame.K_d:
 					# Rotate right
 					self.turn_right = False
+				if e.key == pygame.K_w:
+					self.go = False				
 
 
 

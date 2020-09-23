@@ -8,6 +8,7 @@ from code.Animation import Animation
 from code import helpers
 from code.Helicopter import Helicopter
 from code import settings
+from code.Map import Map
 
 #helpers.load_images("test")
 #helpers.load_images(["file1", "file"])
@@ -16,8 +17,9 @@ from code import settings
 
 def main():
 	window = pygame.display.set_mode(
-		(1680,
-		1050))
+		(settings.WINDOW_WIDTH,
+		settings.WINDOW_HEIGHT),
+		pygame.FULLSCREEN)
 		
 	blue = pygame.Color(
 		50,
@@ -34,15 +36,23 @@ def main():
 	helicopter_surfaces = helpers.load_images(
 		os.path.join(
 			os.getcwd(),
-			"graphics"))
+			"graphics",
+			"helicopter"))
 			
 	helicopter = pygame.sprite.GroupSingle(
 		Helicopter(
 			Animation(
 				helicopter_surfaces,
 				2),
-			400,
-			400))	
+			settings.WINDOW_WIDTH // 2,
+			settings.WINDOW_HEIGHT // 2))
+			
+	map = Map(
+		open(
+			os.path.join(
+				os.getcwd(),
+				"map",
+				"map.txt")))
 		
 	running = True
 	while running:
@@ -53,11 +63,15 @@ def main():
 				if e.key == pygame.K_ESCAPE:
 					running = False
 					
+		map.update_group.update(
+			helicopter.sprite.speed_x,
+			helicopter.sprite.speed_y,
+			map.update_draw_group)
 		helicopter.update(events)
 					
 		window.fill(blue)
-		helicopter.draw(window)
-		
+		map.update_draw_group.draw(window)		
+		helicopter.draw(window)		
 		
 		clock.tick(
 			settings.FPS)

@@ -9,11 +9,8 @@ def load_images(
 	
 	surfaces = []
 	
-	print(type(_paths))
-	
 	if type(_paths) == (list or tuple):
 		# Can either be a single file or a list of files.
-		print("# Can either be a single file or a list of files.")
 		
 		for p in _paths:
 			# Load image from file.				
@@ -24,7 +21,6 @@ def load_images(
 	
 	elif type(_paths) == str:
 		# Can either be dir or file.
-		print("# Can either be dir or file.")
 		
 		if os.path.isfile(_paths):
 			# Load image from file.				
@@ -35,7 +31,6 @@ def load_images(
 		elif os.path.isdir(_paths):
 			# Load images from dir.
 			d = _paths
-			print(os.listdir(d))
 			for f in os.listdir(d):
 				tmp_path = os.path.join(
 					os.path.abspath(_paths),
