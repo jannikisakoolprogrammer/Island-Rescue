@@ -43,7 +43,7 @@ def main():
 		Helicopter(
 			Animation(
 				helicopter_surfaces,
-				2),
+				1),
 			settings.WINDOW_WIDTH // 2,
 			settings.WINDOW_HEIGHT // 2))
 			

@@ -36,7 +36,7 @@ class Helicopter(pygame.sprite.Sprite):
 		self.turn_left = False
 		self.turn_right = False
 		
-		self.last_turn_direction = None
+		self.last_turn_direction = "right"
 		
 	
 	def update(self,
@@ -89,8 +89,6 @@ class Helicopter(pygame.sprite.Sprite):
 				if e.key == pygame.K_w:
 					self.go = True
 
-					
-					print(self.angle)
 
 			if e.type == pygame.KEYUP:
 				if e.key == pygame.K_a:
