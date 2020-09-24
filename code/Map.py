@@ -42,6 +42,13 @@ class Map(pygame.sprite.Sprite):
 				"graphics",
 				"map",
 				"island_water_right.png"))	
+				
+		island_water_right_image2 = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"island_water_right2.png"))				
 
 		island_water_left_image = helpers.load_images(
 			os.path.join(
@@ -49,6 +56,13 @@ class Map(pygame.sprite.Sprite):
 				"graphics",
 				"map",
 				"island_water_left.png"))	
+				
+		island_water_left_image2 = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"island_water_left2.png"))					
 
 		island_water_top_image = helpers.load_images(
 			os.path.join(
@@ -56,6 +70,13 @@ class Map(pygame.sprite.Sprite):
 				"graphics",
 				"map",
 				"island_water_top.png"))	
+				
+		island_water_top_image2 = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"island_water_top2.png"))				
 
 		island_water_bottom_image = helpers.load_images(
 			os.path.join(
@@ -63,6 +84,13 @@ class Map(pygame.sprite.Sprite):
 				"graphics",
 				"map",
 				"island_water_bottom.png"))	
+				
+		island_water_bottom_image2 = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"island_water_bottom2.png"))					
 
 		island_water_top_left_image = helpers.load_images(
 			os.path.join(
@@ -92,12 +120,19 @@ class Map(pygame.sprite.Sprite):
 				"map",
 				"island_water_bottom_left.png"))
 				
+		island_bar = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"island_bar.png"))				
+				
 		water_image = helpers.load_images(
 			os.path.join(
 				os.getcwd(),
 				"graphics",
 				"map",
-				"water.jpg"))				
+				"water.png"))				
 		
 		# Create map here (iterate rows, columns)
 		cnt = 0
@@ -127,8 +162,18 @@ class Map(pygame.sprite.Sprite):
 					animation = Animation(island_water_bottom_right_image)
 				if column == "0":						
 					animation = Animation(island_water_bottom_left_image)
-				if column == "w":						
-					animation = Animation(water_image)					
+				if column == "a":						
+					animation = Animation(island_water_top_image2)
+				if column == "b":						
+					animation = Animation(island_water_bottom_image2)
+				if column == "c":						
+					animation = Animation(island_water_left_image2)
+				if column == "d":						
+					animation = Animation(island_water_right_image2)
+				if column == "e":						
+					animation = Animation(island_bar)
+				if column == "f":						
+					animation = Animation(water_image)									
 
 				# Create maptile, passing the animation instance to it.
 				self.update_group.add(
