@@ -132,15 +132,30 @@ class Map(pygame.sprite.Sprite):
 				os.getcwd(),
 				"graphics",
 				"map",
-				"water.png"))				
+				"water.png"))
+
+		landing_zone_image = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"landing_zone.png"))	
+
+		city_image = helpers.load_images(
+			os.path.join(
+				os.getcwd(),
+				"graphics",
+				"map",
+				"city.png"))					
 		
 		# Create map here (iterate rows, columns)
 		cnt = 0
 		left = top = 0
-
+		w = len(self.layout.readlines()[0].strip()) * settings.MAP_TILE_WIDTH
+		self.layout.seek(0)
+		
 		for row in self.layout:
 			for column in row.strip():
-				print(column)
 				# Create animation.
 				if column == "1":						
 					animation = Animation(island_center_1_image)
@@ -173,7 +188,11 @@ class Map(pygame.sprite.Sprite):
 				if column == "e":						
 					animation = Animation(island_bar)
 				if column == "f":						
-					animation = Animation(water_image)									
+					animation = Animation(water_image)	
+				if column == "g":
+					animation = Animation(landing_zone_image)
+				if column == "h":
+					animation = Animation(city_image)
 
 				# Create maptile, passing the animation instance to it.
 				self.update_group.add(
@@ -188,10 +207,46 @@ class Map(pygame.sprite.Sprite):
 	
 			left = 0
 			top += settings.MAP_TILE_HEIGHT
-	
+
+		h = top
+
+		h -= settings.MAP_TILE_HEIGHT * 4
+		w -= settings.MAP_TILE_WIDTH * 6
 		self.image = pygame.Surface((
-			settings.WINDOW_WIDTH,
-			settings.WINDOW_HEIGHT))
-		self.rect = self.image.get_rect()
+			w,
+			h))
+		self.rect = self.image.get_rect()	
+		self.rect.top = settings.MAP_TILE_HEIGHT * 2
+		self.rect.left = settings.MAP_TILE_WIDTH * 3
+		# Set starting pos
+		start_x = -(w / 2) - settings.MAP_TILE_WIDTH
+		start_y = -h
+		self.rect.move_ip(
+			start_x,
+			start_y)
 			
+		self.update_group.update(
+			start_x,
+			start_y,
+			self.update_draw_group)
+				
+		
+	def update(self,
+		_move_left,
+		_move_top,
+		_helicopter):
+		
+		if self.rect.colliderect(
+			_helicopter.sprite.collision_sprite.rect):
+
+			# If collide, then move maptiles.  Otherwise don't.
+			self.rect.move_ip(
+				_move_left,
+				_move_top)
+				
+			self.update_group.update(
+				_move_left,
+				_move_top,
+				self.update_draw_group)				
+				
 			

@@ -43,7 +43,7 @@ def main():
 		Helicopter(
 			Animation(
 				helicopter_surfaces,
-				1),
+				0),
 			settings.WINDOW_WIDTH // 2,
 			settings.WINDOW_HEIGHT // 2))
 			
@@ -63,15 +63,15 @@ def main():
 				if e.key == pygame.K_ESCAPE:
 					running = False
 					
-		map.update_group.update(
+		map.update(
 			helicopter.sprite.speed_x,
 			helicopter.sprite.speed_y,
-			map.update_draw_group)
+			helicopter)
 		helicopter.update(events)
 					
 		window.fill(blue)
 		map.update_draw_group.draw(window)		
-		helicopter.draw(window)		
+		helicopter.draw(window)
 		
 		clock.tick(
 			settings.FPS)

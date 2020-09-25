@@ -3,7 +3,7 @@ pygame.init()
 
 import math
 
-
+from code import settings
 from code.Animation import Animation
 
 
@@ -27,16 +27,27 @@ class Helicopter(pygame.sprite.Sprite):
 		self.rect.x = self.pos_x
 		self.rect.y = self.pos_y
 		
-		self.turn_amount = 2
+		self.turn_amount = 3
 		self.angle = 0
 		self.speed_x = 0
 		self.speed_y = 0
-		self.max_speed = 5
+		self.max_speed = 7
 		self.go = False
 		self.turn_left = False
 		self.turn_right = False
 		
 		self.last_turn_direction = "right"
+		
+		# Collision rect.
+		self.collision_sprite = pygame.sprite.Sprite()
+		self.collision_sprite.image = pygame.Surface((20, 20))
+		self.collision_sprite.image.fill((123, 123, 123))
+		self.collision_sprite.rect = self.collision_sprite.image.get_rect()
+		self.collision_sprite.rect.centerx = 0
+		self.collision_sprite.rect.centery = 0
+			
+		self.collision_rect_x = 0
+		self.collision_rect_y = 0
 		
 	
 	def update(self,
@@ -68,8 +79,9 @@ class Helicopter(pygame.sprite.Sprite):
 			self.rect = self.animation.rect
 			
 		self.rect.centerx = self.pos_x
-		self.rect.centery = self.pos_y		
-	
+		self.rect.centery = self.pos_y	
+
+		self.update_collision_sprite()
 	
 	def process_events(self,
 		_events):
@@ -99,9 +111,6 @@ class Helicopter(pygame.sprite.Sprite):
 				if e.key == pygame.K_w:
 					self.go = False				
 
-
-
-					
 	
 	def rotate(self, _degrees):
 
@@ -109,3 +118,8 @@ class Helicopter(pygame.sprite.Sprite):
 
 		self.rect.centerx = self.pos_x
 		self.rect.centery = self.pos_y		
+		
+	
+	def update_collision_sprite(self):	
+		self.collision_sprite.rect.centerx = self.rect.centerx - (-math.sin(math.radians(self.angle)) * settings.HELICOPTER_COLLISION_RECT_DISTANCE)
+		self.collision_sprite.rect.centery = self.rect.centery - math.cos(math.radians(self.angle)) * settings.HELICOPTER_COLLISION_RECT_DISTANCE

@@ -773,9 +773,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="1368.285"
-     inkscape:cx="-511.43532"
-     inkscape:zoom="0.49497475"
+     inkscape:cy="1708.105"
+     inkscape:cx="485.39432"
+     inkscape:zoom="0.9899495"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -800,7 +800,7 @@
      id="layer1">
     <g
        id="g8409"
-       transform="translate(97.142856,-691.42857)"
+       transform="translate(-450.35982,-814.66718)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_bottom_left.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -989,7 +989,7 @@
     </g>
     <g
        id="g8382"
-       transform="translate(-614.28571,385.71428)"
+       transform="translate(-695.09791,-169.86962)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_top_right.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1162,7 +1162,10 @@
     </g>
     <g
        id="g8759"
-       transform="translate(335.37064,-115.15739)">
+       transform="translate(791.95959,-523.25901)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_top2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g6558">
         <g
@@ -1280,7 +1283,8 @@
        id="g8568"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_bottom.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       transform="translate(-66.670067,-488.91383)">
       <g
          id="g6492">
         <g
@@ -1435,7 +1439,7 @@
     </g>
     <g
        id="g8701"
-       transform="translate(-58.588847,-137.38075)"
+       transform="translate(-107.07617,-527.29963)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_top.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1751,7 +1755,7 @@
     </g>
     <g
        id="g8470"
-       transform="translate(-22.857143,-474.28571)"
+       transform="translate(-1445.1519,-607.62584)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_top_left.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1906,7 +1910,11 @@
       </g>
     </g>
     <g
-       id="g8593">
+       id="g8593"
+       transform="translate(-74.751288,-462.64986)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_bottom2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g6593">
         <g
@@ -2077,7 +2085,8 @@
        id="g8661"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_left.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       transform="translate(361.63461,-476.792)">
       <g
          id="g6516">
         <g
@@ -2303,7 +2312,11 @@
       </g>
     </g>
     <g
-       id="g8626">
+       id="g8626"
+       transform="translate(319.2082,-492.95444)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_left2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g6577">
         <g
@@ -2489,7 +2502,11 @@
       </g>
     </g>
     <g
-       id="g8501">
+       id="g8501"
+       transform="translate(-84.852813,-442.44681)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_right2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g6450">
         <g
@@ -2677,7 +2694,8 @@
        id="g8536"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_right.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       transform="translate(-90.913728,-458.60925)">
       <g
          id="g6466">
         <g
@@ -2845,7 +2863,7 @@
     </g>
     <g
        id="g8439"
-       transform="translate(-574.28571,131.42857)"
+       transform="translate(-655.09791,-383.74922)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_water_bottom_right.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3001,7 +3019,10 @@
     </g>
     <g
        id="g8307"
-       transform="translate(-737.63306,964.0406)">
+       transform="translate(-864.91231,-454.21357)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_center2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          transform="scale(1,-1)"
          y="433.35208"
@@ -3373,7 +3394,7 @@
     </g>
     <g
        id="g8250"
-       transform="translate(-596.62379,-7.016698)"
+       transform="translate(-612.78623,-479.76809)"
        inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_center1.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3661,12 +3682,18 @@
        id="rect3479-1-2-3-2"
        width="400"
        height="400"
-       x="-618.63385"
-       y="-91.295944"
-       transform="scale(1,-1)" />
+       x="-279.2226"
+       y="415.80063"
+       transform="scale(1,-1)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\water.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g9150"
-       transform="translate(-10.101525,-10.101525)">
+       transform="translate(-103.03556,-466.69047)"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\island_bar.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          transform="scale(1,-1)"
          y="-966.64795"
@@ -4096,6 +4123,441 @@
          cx="-246.47723"
          id="path9107-1"
          style="fill:#676c53;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4942"
+       transform="matrix(0.55701363,0,0,0.52015899,76.569549,-140.95633)">
+      <ellipse
+         ry="82.832512"
+         rx="122.22845"
+         cy="-378.01379"
+         cx="568.71588"
+         id="path4857"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="95.964493"
+         rx="115.15739"
+         cy="-304.27264"
+         cx="731.35046"
+         id="path4859"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="56.568542"
+         rx="114.14724"
+         cy="-472.96814"
+         cx="722.25909"
+         id="path4861"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="84.852814"
+         rx="331.33005"
+         cy="-386.095"
+         cx="874.79211"
+         id="path4863"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="103.03556"
+         rx="212.13203"
+         cy="-258.8158"
+         cx="989.94946"
+         id="path4865"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="49.497475"
+         rx="96.97464"
+         cy="-209.31831"
+         cx="1204.1018"
+         id="path4867"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="75.761444"
+         rx="137.38075"
+         cy="-292.15082"
+         cx="1286.9343"
+         id="path4869"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="101.01525"
+         rx="142.4315"
+         cy="-388.11533"
+         cx="1197.0308"
+         id="path4871"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="49.497475"
+         rx="86.873116"
+         cy="-478.01889"
+         cx="951.56372"
+         id="path4873"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="25.253813"
+         rx="73.741135"
+         cy="-453.77524"
+         cx="1063.6907"
+         id="path4875"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="18.182745"
+         rx="44.446712"
+         cy="-479.02905"
+         cx="856.60938"
+         id="path4877"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4955"
+       transform="matrix(0.71610171,0,0,0.71610171,281.28467,477.11572)">
+      <ellipse
+         ry="48.48732"
+         rx="61.619305"
+         cy="-860.8667"
+         cx="605.08136"
+         id="path4889"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="37.375645"
+         rx="89.903572"
+         cy="-817.43011"
+         cx="550.53314"
+         id="path4891"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="41.416256"
+         rx="104.04571"
+         cy="-791.1662"
+         cx="683.87329"
+         id="path4893"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="46.467018"
+         rx="52.527931"
+         cy="-735.60779"
+         cx="656.59912"
+         id="path4895"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="39.39595"
+         rx="111.11678"
+         cy="-744.69916"
+         cx="791.95959"
+         id="path4897"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="32.324883"
+         rx="65.659912"
+         cy="-773.99359"
+         cx="881.86316"
+         id="path4899"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="46.467018"
+         rx="95.964493"
+         cy="-778.03418"
+         cx="978.83783"
+         id="path4901"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="40.406101"
+         rx="282.84271"
+         cy="-848.74487"
+         cx="862.67029"
+         id="path4903"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="42.426407"
+         rx="98.994949"
+         cy="-802.27783"
+         cx="840.4469"
+         id="path4905"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="30.304577"
+         rx="83.842659"
+         cy="-889.151"
+         cx="918.22864"
+         id="path4907"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="55.558388"
+         rx="117.1777"
+         cy="-871.97839"
+         cx="701.04584"
+         id="path4909"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="27.274118"
+         rx="46.467018"
+         cy="-770.96313"
+         cx="549.52301"
+         id="path4911"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="29.294424"
+         rx="102.02541"
+         cy="-756.82098"
+         cx="1108.1373"
+         id="path4913"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4931"
+       transform="matrix(0.55533091,0,0,0.55533091,57.701218,-65.872161)">
+      <ellipse
+         ry="57.578693"
+         rx="102.02541"
+         cy="41.199512"
+         cx="647.50775"
+         id="path4879"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="56.568542"
+         rx="101.01525"
+         cy="121.00156"
+         cx="761.65503"
+         id="path4881"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="44.446712"
+         rx="92.934036"
+         cy="62.412716"
+         cx="785.89868"
+         id="path4883"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="48.48732"
+         rx="82.832512"
+         cy="106.85943"
+         cx="899.03577"
+         id="path4885"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="35.355339"
+         rx="112.12693"
+         cy="75.544701"
+         cx="990.95966"
+         id="path4887"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="37.375645"
+         rx="96.97464"
+         cy="136.15385"
+         cx="1020.2541"
+         id="path4922"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="34.345188"
+         rx="72.73098"
+         cy="155.34676"
+         cx="903.07635"
+         id="path4924"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="31.314728"
+         rx="165.66502"
+         cy="45.240124"
+         cx="971.76672"
+         id="path4926"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="30.304577"
+         rx="85.862968"
+         cy="90.696991"
+         cx="1106.1171"
+         id="path4929"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4931-4"
+       transform="matrix(-0.68107177,0,0,0.88376224,1348.2149,43.91285)">
+      <ellipse
+         ry="57.578693"
+         rx="102.02541"
+         cy="41.199512"
+         cx="647.50775"
+         id="path4879-3"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="56.568542"
+         rx="101.01525"
+         cy="121.00156"
+         cx="761.65503"
+         id="path4881-7"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="44.446712"
+         rx="92.934036"
+         cy="62.412716"
+         cx="785.89868"
+         id="path4883-6"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="48.48732"
+         rx="82.832512"
+         cy="106.85943"
+         cx="899.03577"
+         id="path4885-7"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="35.355339"
+         rx="112.12693"
+         cy="75.544701"
+         cx="990.95966"
+         id="path4887-6"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="37.375645"
+         rx="96.97464"
+         cy="136.15385"
+         cx="1020.2541"
+         id="path4922-2"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="34.345188"
+         rx="72.73098"
+         cy="155.34676"
+         cx="903.07635"
+         id="path4924-4"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="31.314728"
+         rx="165.66502"
+         cy="45.240124"
+         cx="971.76672"
+         id="path4926-0"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="30.304577"
+         rx="85.862968"
+         cy="90.696991"
+         cx="1106.1171"
+         id="path4929-9"
+         style="fill:#c3c4c4;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g5033"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\landing_zone.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\water.png"
+         transform="scale(1,-1)"
+         y="522.47577"
+         x="206.08133"
+         height="400"
+         width="400"
+         id="rect3479-1-2-3-2-8"
+         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="145.96704"
+         cy="-722.47577"
+         cx="406.08133"
+         id="path5027"
+         style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5029"
+         y="-656.86542"
+         x="338.40555"
+         style="font-style:normal;font-weight:normal;font-size:180px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-656.86542"
+           x="338.40555"
+           id="tspan5031"
+           sodipodi:role="line">H</tspan></text>
+    </g>
+    <g
+       id="g5146"
+       inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\city.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="Y:\My_Software_Projects\Python\Projects\pyweek30\graphics\map\water.png"
+         transform="scale(1,-1)"
+         y="511.36414"
+         x="623.27429"
+         height="400"
+         width="399.97961"
+         id="rect3479-1-2-3-2-8-2"
+         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-720.45551"
+         x="641.44598"
+         height="172.73608"
+         width="172.72728"
+         id="rect5070"
+         style="fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-645.70422"
+         x="641.44598"
+         height="23.233507"
+         width="172.72728"
+         id="rect5070-4"
+         style="fill:#ff5555;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         transform="matrix(0,1,-0.99994904,0,441.22914,-1518.4761)"
+         id="g5105">
+        <rect
+           style="fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5070-42"
+           width="172.73608"
+           height="172.73608"
+           x="780.34283"
+           y="-560.34637" />
+        <rect
+           style="fill:#ff5555;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5070-4-8"
+           width="172.73608"
+           height="23.233507"
+           x="780.34283"
+           y="-485.59506" />
+      </g>
+      <rect
+         y="-900.2627"
+         x="623.2641"
+         height="146.47214"
+         width="400"
+         id="rect5109"
+         style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-833.08752"
+         x="642.45599"
+         height="12.121803"
+         width="57.575741"
+         id="rect5111"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-833.08752"
+         x="717.07727"
+         height="12.121803"
+         width="57.575741"
+         id="rect5111-9"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-833.08752"
+         x="791.69849"
+         height="12.121803"
+         width="57.575741"
+         id="rect5111-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-833.08752"
+         x="866.31976"
+         height="12.121803"
+         width="57.575741"
+         id="rect5111-98"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="-833.08752"
+         x="940.94092"
+         height="12.121803"
+         width="57.575741"
+         id="rect5111-3"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
