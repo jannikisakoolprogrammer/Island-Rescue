@@ -250,8 +250,11 @@ class Map(pygame.sprite.Sprite):
 			# If helicopter carries humans, and is at the landing platform,
 			# drop those humans, so the helicopter can rescue more humans.
 			if self.landing_zone.rect.colliderect(
-				_helicopter.sprite.rect):
+				_helicopter.sprite.collission_rectangle):
 				_helicopter.sprite.drop_humans()
+				
+				# Heal helicopter.
+				_helicopter.sprite.restore_hitpoints()
 			
 			return True
 			

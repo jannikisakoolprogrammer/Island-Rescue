@@ -75,8 +75,7 @@ class Bird(OtherGameObject):
 			_move_top)
 		
 		if self.rect.colliderect(
-			_helicopter.sprite.rect) == True:
+			_helicopter.sprite.collission_rectangle) == True:
 				self.kill()
-			
-			# Reduce helicopter damage taken energ on crash
-			# _helicopter.sprite.alter_damage_energy()
+						
+				_helicopter.sprite.reduce_hitpoints()

@@ -49,8 +49,5 @@ class Cloud(OtherGameObject):
 			_move_top)
 		
 		if self.rect.colliderect(
-			_helicopter.sprite.rect) == True:
-				pass
-			
-			# Reduce helicopter energy.
-			# _helicopter.sprite.alter_energy()
+			_helicopter.sprite.collission_rectangle) == True:
+				_helicopter.sprite.reduce_energy()

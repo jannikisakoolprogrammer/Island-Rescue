@@ -37,7 +37,7 @@ class Human(OtherGameObject):
 			_move_top)
 		
 		if self.rect.colliderect(
-			_helicopter.sprite.rect) == True \
+			_helicopter.sprite.collission_rectangle) == True \
 			and _helicopter.sprite.can_rescue_human() == True:
 			
 			# Human has been picked up the helicopter.  Hinder drawing.

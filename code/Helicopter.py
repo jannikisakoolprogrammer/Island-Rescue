@@ -5,13 +5,15 @@ import math
 
 from code import settings
 from code.Animation import Animation
+from code.Timer import Timer
 
 
 class Helicopter(pygame.sprite.Sprite):
 	def __init__(self,
 		_animation,
 		_pos_x,
-		_pos_y,):
+		_pos_y,
+		_hud):
 		super(
 			Helicopter,
 			self).__init__()
@@ -27,11 +29,16 @@ class Helicopter(pygame.sprite.Sprite):
 		self.rect.x = self.pos_x
 		self.rect.y = self.pos_y
 		
+		self.hud = _hud
+		
 		self.turn_amount = 3
 		self.angle = 0
 		self.speed_x = 0
 		self.speed_y = 0
-		self.max_speed = 7
+		self.speed_normal = settings.HELICOPTER_SPEED_NORMAL
+		self.speed_turbo = settings.HELICOPTER_SPEED_TURBO
+		print(self.speed_turbo)
+		self.speed = self.speed_normal
 		self.go = False
 		self.turn_left = False
 		self.turn_right = False
@@ -52,11 +59,30 @@ class Helicopter(pygame.sprite.Sprite):
 		# for carrying humans.
 		self.rescue_humans = pygame.sprite.Group()
 		
+		# TODO:  Create collision rectangle for better collission detection.
+		self.collission_rectangle = pygame.Rect((
+			0,
+			0,
+			150,
+			150))
+			
+		self.stopwatch_timer = Timer(
+			settings.FPS,
+			1)
+			
+		self.turbo = None
 	
 	def update(self,
 		_events):
 
 		self.process_events(_events)
+		
+		if self.turbo == True:
+			self.speed = self.speed_turbo
+			# Reduce energy.
+			self.hud.reduce_energy_cloud_turbo()
+		else:
+			self.speed = self.speed_normal
 		
 		if self.turn_left == True:
 			self.angle -= self.turn_amount
@@ -71,8 +97,8 @@ class Helicopter(pygame.sprite.Sprite):
 			self.rotate(-self.angle)
 
 		if self.go == True:
-			self.speed_x = -math.sin(math.radians(self.angle)) * self.max_speed
-			self.speed_y = math.cos(math.radians(self.angle)) * self.max_speed
+			self.speed_x = -math.sin(math.radians(self.angle)) * self.speed
+			self.speed_y = math.cos(math.radians(self.angle)) * self.speed
 		else:
 			self.speed_x = 0
 			self.speed_y = 0
@@ -82,9 +108,15 @@ class Helicopter(pygame.sprite.Sprite):
 			self.rect = self.animation.rect
 			
 		self.rect.centerx = self.pos_x
-		self.rect.centery = self.pos_y	
+		self.rect.centery = self.pos_y
+
+		self.collission_rectangle.centerx = self.pos_x
+		self.collission_rectangle.centery = self.pos_y
 
 		self.update_collision_sprite()
+		
+		if self.stopwatch_timer.update() == True:
+			self.hud.update_stopwatch()
 	
 	def process_events(self,
 		_events):
@@ -103,6 +135,8 @@ class Helicopter(pygame.sprite.Sprite):
 					self.last_turn_direction = "right"
 				if e.key == pygame.K_w:
 					self.go = True
+				if e.key == pygame.K_SPACE:
+					self.turbo = True
 
 
 			if e.type == pygame.KEYUP:
@@ -112,7 +146,9 @@ class Helicopter(pygame.sprite.Sprite):
 					# Rotate right
 					self.turn_right = False
 				if e.key == pygame.K_w:
-					self.go = False				
+					self.go = False
+				if e.key == pygame.K_SPACE:
+					self.turbo = False
 
 	
 	def rotate(self, _degrees):
@@ -141,12 +177,27 @@ class Helicopter(pygame.sprite.Sprite):
 		
 		self.rescue_humans.add(
 			_human)
+		
+		self.hud.increase_humans_carrying()
 	
 	
 	def drop_humans(self):
 		
 		for human in self.rescue_humans:
 			human.rescued()
+			self.hud.increase_humans_rescued()
 			
 		self.rescue_humans.empty()
 		
+		
+	def reduce_energy(self):
+		self.hud.reduce_energy_cloud_collision()
+	
+	
+	def reduce_hitpoints(self):
+		self.hud.reduce_hitpoints_bird_collision()
+		
+		
+	def restore_hitpoints(self):
+		self.hud.restore_hitpoints()		
+	
