@@ -49,6 +49,9 @@ class Helicopter(pygame.sprite.Sprite):
 		self.collision_rect_x = 0
 		self.collision_rect_y = 0
 		
+		# for carrying humans.
+		self.rescue_humans = pygame.sprite.Group()
+		
 	
 	def update(self,
 		_events):
@@ -123,3 +126,27 @@ class Helicopter(pygame.sprite.Sprite):
 	def update_collision_sprite(self):	
 		self.collision_sprite.rect.centerx = self.rect.centerx - (-math.sin(math.radians(self.angle)) * settings.HELICOPTER_COLLISION_RECT_DISTANCE)
 		self.collision_sprite.rect.centery = self.rect.centery - math.cos(math.radians(self.angle)) * settings.HELICOPTER_COLLISION_RECT_DISTANCE
+		
+	
+	def can_rescue_human(self):
+		
+		if len(self.rescue_humans) >= settings.MAX_HUMANS_BEING_CARRIED:
+			return False
+		else:
+			return True
+	
+	
+	def add_human(self,
+		_human):
+		
+		self.rescue_humans.add(
+			_human)
+	
+	
+	def drop_humans(self):
+		
+		for human in self.rescue_humans:
+			human.rescued()
+			
+		self.rescue_humans.empty()
+		

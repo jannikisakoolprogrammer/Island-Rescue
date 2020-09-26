@@ -1,4 +1,5 @@
 import os.path
+import math
 
 import pygame
 pygame.init()
@@ -48,5 +49,16 @@ def load_sounds():
 
 def load_music():
 	pass
+
+
+def calc_distance_in_px(
+	pygame_rect1,
+	pygame_rect2):
+	
+	dist = math.hypot(
+		pygame_rect1.centerx - pygame_rect2.centerx,
+		pygame_rect1.centery - pygame_rect2.centery)
+		
+	return abs(dist)
 	
 	

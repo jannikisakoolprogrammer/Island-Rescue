@@ -17,7 +17,7 @@ class Map(pygame.sprite.Sprite):
 			self).__init__()
 		
 		self.layout = _layout
-		
+		self.landing_zone = None
 		
 		self.update_group = pygame.sprite.Group()
 		self.update_draw_group = pygame.sprite.Group()
@@ -195,13 +195,17 @@ class Map(pygame.sprite.Sprite):
 					animation = Animation(city_image)
 
 				# Create maptile, passing the animation instance to it.
-				self.update_group.add(
-					MapTile(
+				map_tile = MapTile(
 						animation,
 						1,
 						left,
 						top,
-						column))
+						column)
+						
+				if map_tile.tile_char == "g":
+					self.landing_zone = map_tile
+					
+				self.update_group.add(map_tile)
 						
 				left += settings.MAP_TILE_WIDTH
 	
@@ -238,15 +242,34 @@ class Map(pygame.sprite.Sprite):
 		
 		if self.rect.colliderect(
 			_helicopter.sprite.collision_sprite.rect):
-
-			# If collide, then move maptiles.  Otherwise don't.
-			self.rect.move_ip(
+			
+			self.refresh(
 				_move_left,
 				_move_top)
 				
-			self.update_group.update(
-				_move_left,
-				_move_top,
-				self.update_draw_group)				
+			# If helicopter carries humans, and is at the landing platform,
+			# drop those humans, so the helicopter can rescue more humans.
+			if self.landing_zone.rect.colliderect(
+				_helicopter.sprite.rect):
+				_helicopter.sprite.drop_humans()
+			
+			return True
+			
+		else:
+			return False
+			
+	
+	def refresh(self,
+		_move_left,
+		_move_top):
+		
+		self.rect.move_ip(
+			_move_left,
+			_move_top)
+			
+		self.update_group.update(
+			_move_left,
+			_move_top,
+			self.update_draw_group)		
 				
 			
